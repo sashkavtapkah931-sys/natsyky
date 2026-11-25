@@ -1,4 +1,3 @@
-
 const input = document.querySelector('#shapka input[type="search"]');
 const button = document.getElementById('search-button');
 const cards = document.querySelectorAll('.card');
@@ -14,4 +13,5 @@ if (input && button) {
     }
 
     button.addEventListener('click', searchCards);
+    input.addEventListener('input', searchCards);
 }
