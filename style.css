@@ -1,0 +1,89 @@
+body {
+  background: #f2f4f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.rectangle {
+  width: 100%;
+  height: 100px;
+  background: #fff;
+  border: 2px solid #0e0e0e;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0 20px;
+}
+
+#logo {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+}
+
+input[type="search"] {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  outline: none;
+  width: 300px;
+}
+
+button {
+  background: #009bfb;
+  color: #000;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px solid #0e0e0e;
+  border-radius: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.card {
+  background: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.img {
+  height: 150px;
+  background: #dcdcdc;
+}
+
+.card p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.card span {
+  font-size: 12px;
+  color: #777;
+}
+.card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+#menu {
+      display: flex;
+      gap: 15px;
+      padding: 10px 20px;
+      background: #fff;
+      border-bottom: 2px solid #0e0e0e;
+  }
