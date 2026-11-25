@@ -1,134 +1,108 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OLX — Перегляд оголошень</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оголошення</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav>
-    <a href="index.html">main</a>
-    <a href="about.html">about</a>
-</nav>
+    <nav id="menu">
+        <a href="index.html">main</a>
+        <a href="about.html">about</a>
+    </nav>
 
-  <header class="rectangle">
-    <a href="#top" class="brand-mark">olx</a>
-  </header>
-
-  <main class="catalog-wrap">
-    <section class="listings-layout">
-
-      <a href="#item-1" class="ad-tile">
-        <div class="ad-photo-box">
-          <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500" alt="MacBook Pro 14" class="ad-photo">
+    <div id="shapka">
+        <div class="rectangle">
+            <img src="img.png" alt="logo" id="logo">
+            <a href="index.html" class="back-btn">Назад до оголошень</a>
         </div>
-        <div class="ad-summary">MacBook Pro 14 M1 Pro 16/512GB</div>
-        <div class="ad-cost">42 500 грн</div>
-        <div class="ad-place">Київ • Сьогодні</div>
-      </a>
-
-      <a href="#item-2" class="ad-tile">
-        <div class="ad-photo-box">
-          <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=500" alt="Диван" class="ad-photo">
-        </div>
-        <div class="ad-summary">Дизайнерський зелений диван велюр</div>
-        <div class="ad-cost">11 000 грн</div>
-        <div class="ad-place">Львів • Вчора</div>
-      </a>
-
-      <a href="#item-3" class="ad-tile">
-        <div class="ad-photo-box">
-          <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500" alt="Фотоапарат" class="ad-photo">
-        </div>
-        <div class="ad-summary">Вінтажний фотоапарат Polaroid + касети</div>
-        <div class="ad-cost">3 200 грн</div>
-        <div class="ad-place">Одеса • 24 лист.</div>
-      </a>
-
-      <a href="#item-4" class="ad-tile">
-        <div class="ad-photo-box">
-          <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=500" alt="Автомобіль" class="ad-photo">
-        </div>
-        <div class="ad-summary">Купе після повного ТО, свіжа гума</div>
-        <div class="ad-cost">385 000 грн</div>
-        <div class="ad-place">Дніпро • 22 лист.</div>
-      </a>
-
-    </section>
-  </main>
-
-  <div id="item-1" class="popup-backdrop">
-    <div class="popup-dialog">
-      <a href="#close" class="popup-close">&times;</a>
-      <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800" alt="MacBook Pro 14" class="popup-photo">
-      <div class="popup-content">
-        <div class="ad-place">Київ • Сьогодні о 14:20</div>
-        <h2>MacBook Pro 14 M1 Pro 16/512GB</h2>
-        <div class="popup-cost">42 500 грн</div>
-        <p class="popup-text">
-          Офіційний ноутбук у чудовому стані, коробка та блок живлення MagSafe у комплекті. Батарея тримає добре.
-        </p>
-        <div class="seller-row">
-          <span>Продавець: <strong>Олександр</strong></span>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <div id="item-2" class="popup-backdrop">
-    <div class="popup-dialog">
-      <a href="#close" class="popup-close">&times;</a>
-      <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800" alt="Диван" class="popup-photo">
-      <div class="popup-content">
-        <div class="ad-place">Львів • Вчора о 19:05</div>
-        <h2>Дизайнерський зелений диван велюр</h2>
-        <div class="popup-cost">11 000 грн</div>
-        <p class="popup-text">
-          Двомісний диван у смарагдовому кольорі, ніжки з натурального дуба. Самовивіз із центру Львова.
-        </p>
-        <div class="seller-row">
-          <span>Продавець: <strong>Марія</strong></span>
+    <div class="detail-wrap">
+        <div id="ad-1" class="ad-detail-card">
+            <div class="detail-photo-box">
+                <img src="https://ireland.apollo.olxcdn.com:443/v1/files/6qkumc00lu4t3-UA/image;s=1200x0" alt="Безперебійник VOLT POLSKA" class="detail-photo">
+            </div>
+            <div class="detail-info">
+                <div class="ad-place">Київ - 18 листопада</div>
+                <h2 class="detail-title">Безперебійник VOLT POLSKA</h2>
+                <div class="detail-cost">350 $</div>
+                <p class="detail-desc">Джерело безперебійного живлення у справному стані.</p>
+                <div class="seller-block">
+                    <div>Продавець: <strong>Олег Мельник</strong></div>
+                    <div>Номер: <strong>+38 (099) 412-65-10</strong></div>
+                </div>
+                <label class="buy-label">
+                    <input type="checkbox" class="buy-check">
+                    <span class="buy-btn">Купити</span>
+                    <span class="buy-done">Заявку на покупку оформлено: Безперебійник VOLT POLSKA — 350 $</span>
+                </label>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <div id="item-3" class="popup-backdrop">
-    <div class="popup-dialog">
-      <a href="#close" class="popup-close">&times;</a>
-      <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=800" alt="Фотоапарат" class="popup-photo">
-      <div class="popup-content">
-        <div class="ad-place">Одеса • 24 лист.</div>
-        <h2>Вінтажний фотоапарат Polaroid + касети</h2>
-        <div class="popup-cost">3 200 грн</div>
-        <p class="popup-text">
-          Робочий фотоапарат миттєвого друку зі справним спалахом. У комплекті нова касета на 8 знімків.
-        </p>
-        <div class="seller-row">
-          <span>Продавець: <strong>Дмитро</strong></span>
+        <div id="ad-2" class="ad-detail-card">
+            <div class="detail-photo-box">
+                <img src="https://ireland.apollo.olxcdn.com:443/v1/files/cps4kjnwuwdu1-UA/image;s=1200x0" alt="Жіночий зимовий спортивний костюм на флісі" class="detail-photo">
+            </div>
+            <div class="detail-info">
+                <div class="ad-place">Львів - 18 листопада</div>
+                <h2 class="detail-title">Жіночий зимовий спортивний костюм на флісі</h2>
+                <div class="detail-cost">2 300 грн.</div>
+                <p class="detail-desc">Теплий зимовий костюм на м'якому флісі, худі та штани.</p>
+                <div class="seller-block">
+                    <div>Продавець: <strong>Ірина Ковальчук</strong></div>
+                    <div>Номер: <strong>+38 (067) 834-19-52</strong></div>
+                </div>
+                <label class="buy-label">
+                    <input type="checkbox" class="buy-check">
+                    <span class="buy-btn">Купити</span>
+                    <span class="buy-done">Заявку на покупку оформлено: Жіночий зимовий спортивний костюм на флісі — 2 300 грн.</span>
+                </label>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <div id="item-4" class="popup-backdrop">
-    <div class="popup-dialog">
-      <a href="#close" class="popup-close">&times;</a>
-      <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800" alt="Автомобіль" class="popup-photo">
-      <div class="popup-content">
-        <div class="ad-place">Дніпро • 22 лист.</div>
-        <h2>Купе після повного ТО, свіжа гума</h2>
-        <div class="popup-cost">385 000 грн</div>
-        <p class="popup-text">
-          Доглянуте купе, замінено мастила та фільтри, готове до перевірки на СТО.
-        </p>
-        <div class="seller-row">
-          <span>Продавець: <strong>Андрій</strong></span>
+        <div id="ad-3" class="ad-detail-card">
+            <div class="detail-photo-box">
+                <img src="https://ireland.apollo.olxcdn.com:443/v1/files/3lipmqsjjmaj-UA/image;s=1200x0" alt="Турбіна Mercedes-Benz 2.0 M274" class="detail-photo">
+            </div>
+            <div class="detail-info">
+                <div class="ad-place">Одеса - 18 листопада</div>
+                <h2 class="detail-title">Турбіна Mercedes-Benz 2.0 M274</h2>
+                <div class="detail-cost">950 грн.</div>
+                <p class="detail-desc">Деталь для двигуна Mercedes-Benz 2.0 M274.</p>
+                <div class="seller-block">
+                    <div>Продавець: <strong>Сергій Мороз</strong></div>
+                    <div>Номер: <strong>+38 (063) 519-74-28</strong></div>
+                </div>
+                <label class="buy-label">
+                    <input type="checkbox" class="buy-check">
+                    <span class="buy-btn">Купити</span>
+                    <span class="buy-done">Заявку на покупку оформлено: Турбіна Mercedes-Benz 2.0 M274 — 950 грн.</span>
+                </label>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
 
+        <div id="ad-4" class="ad-detail-card">
+            <div class="detail-photo-box">
+                <img src="https://ireland.apollo.olxcdn.com:443/v1/files/h808n4sho078-UA/image;s=1200x0" alt="DDR5 G.Skill 6000 CL30" class="detail-photo">
+            </div>
+            <div class="detail-info">
+                <div class="ad-place">Харків - 18 листопада</div>
+                <h2 class="detail-title">DDR5 G.Skill 6000 CL30</h2>
+                <div class="detail-cost">4 100 грн.</div>
+                <p class="detail-desc">Оперативна пам'ять DDR5 G.Skill 6000 CL30 у робочому стані.</p>
+                <div class="seller-block">
+                    <div>Продавець: <strong>Артем Савченко</strong></div>
+                    <div>Номер: <strong>+38 (050) 298-61-04</strong></div>
+                </div>
+                <label class="buy-label">
+                    <input type="checkbox" class="buy-check">
+                    <span class="buy-btn">Купити</span>
+                    <span class="buy-done">Заявку на покупку оформлено: DDR5 G.Skill 6000 CL30 — 4 100 грн.</span>
+                </label>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
