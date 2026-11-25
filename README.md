@@ -1,1 +1,1 @@
-# natsyky
+# glavni_sosunku
